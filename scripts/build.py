@@ -91,17 +91,15 @@ def build_epub(lang):
     return {"path": str(output.relative_to(ROOT)), "pandoc": version, "xhtml_documents_checked": documents, "sha256": hashlib.sha256(output.read_bytes()).hexdigest()}
 
 
-def landing(epub):
-    downloads = ""
-    if epub:
-        downloads = '<section class="downloads"><h2>Additional formats / 附加格式</h2><a href="downloads/mensoria-sql-0.1.0-draft.1-en.epub">English EPUB</a> · <a href="downloads/mensoria-sql-0.1.0-draft.1-zh-CN.epub">中文 EPUB</a></section>'
-    return (ROOT / "web/index.html").read_text().replace("{{epub_links}}", downloads)
+def landing():
+    return (ROOT / "web/index.html").read_text()
 
 
 def site_metadata():
     site = ROOT / "site"
     (site / "assets").mkdir(exist_ok=True)
     shutil.copy2(ROOT / "web/site.css", site / "assets/site.css")
+    shutil.copy2(ROOT / "book/theme/docs-navigation.js", site / "assets/docs-navigation.js")
     shutil.copy2(ROOT / "web/404.html", site / "404.html")
     (site / ".nojekyll").write_text("")
     canonical = "https://mensoria.github.io/mensoria-SQL/"
@@ -134,7 +132,7 @@ def main():
     for old in downloads.glob("mensoria-sql-*.epub"):
         old.unlink()
     epub = [build_epub(lang) for lang in ("en", "zh-CN")] if args.epub else []
-    (ROOT / "site/index.html").write_text(landing(bool(epub)))
+    (ROOT / "site/index.html").write_text(landing())
     site_metadata()
     run(sys.executable, ROOT / "scripts/check_book.py", "--html")
     report = {"edition": "0.1.0-draft.1", "mdbook": "0.5.4", "status": "documentation_site_build_only", "languages": ["en", "zh-CN"], "epub": epub, "runtime_sql_acceptance": "not_run", "ci": "not_run_locally", "deployment": "not_performed"}

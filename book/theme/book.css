@@ -1,18 +1,92 @@
-:root { --content-max-width: 860px; }
-.content main { line-height: 1.85; }
+:root {
+  --content-max-width: 760px;
+  --sidebar-target-width: 272px;
+  --menu-bar-height: 56px;
+  --docs-muted: #526663;
+  --docs-border: #dce4df;
+  --docs-focus: #176e66;
+  --docs-action-bg: #176e66;
+  --docs-action-fg: #ffffff;
+}
+.light {
+  --fg: #253430;
+  --bg: #ffffff;
+  --links: #176e66;
+  --sidebar-bg: #f4f6f5;
+  --sidebar-fg: #41514c;
+  --sidebar-active: #145e56;
+  --table-border-color: #dce4df;
+  --table-header-bg: #f4f6f5;
+  --table-alternate-bg: #ffffff;
+}
+.navy, .coal, .ayu {
+  --docs-muted: #b3c3c1;
+  --docs-border: #415255;
+  --docs-focus: #7ac4b9;
+  --docs-action-bg: #7ac4b9;
+  --docs-action-fg: #142f2c;
+}
+body, button, select, input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", sans-serif;
+}
+::selection { background: #cce5de; color: #172e32; }
+a { text-underline-offset: .18em; }
+a:focus-visible, button:focus-visible, select:focus-visible {
+  outline: 2px solid var(--docs-focus);
+  outline-offset: 3px;
+}
+input { caret-color: var(--docs-focus); }
+.content main { line-height: 1.8; max-width: 70ch; }
 .content main h1, .content main h2, .content main h3 { line-height: 1.4; }
-.content main h1 { letter-spacing: -.025em; margin-bottom: 1.2em; }
+.content main h1 { font-size: 3.2rem; font-weight: 650; letter-spacing: -.025em; margin-top: 2.8rem; margin-bottom: 2rem; }
+.content main h2 { font-size: 2.2rem; font-weight: 600; margin-top: 3.6rem; margin-bottom: 1.4rem; }
+.content main h3 { font-size: 1.8rem; font-weight: 600; }
 .content main p { text-wrap: pretty; }
-.content main table { font-size: .94em; line-height: 1.65; }
-.content main td, .content main th { padding: .65em .8em; vertical-align: top; }
+.content main table { font-size: .94em; line-height: 1.65; width: 100%; margin: 1.6rem 0 2.4rem; }
+.content main td, .content main th { padding: .8rem 1.2rem; vertical-align: top; }
 .content main code { font-size: .88em; }
 .content main pre code { font-size: .84em; line-height: 1.65; }
-.edition-label { border-left: 3px solid #278078; padding: .25em 1em; margin: 2em 0; font-size: .8em; letter-spacing: .08em; color: var(--fg); }
-#language-switch { display: inline-block; margin-inline: .8em; padding: .15em .45em; border-radius: 3px; color: var(--icons); text-decoration: none; font-size: 13px; white-space: nowrap; }
-#language-switch:hover, #language-switch:focus-visible { color: var(--fg); outline: 2px solid #278078; outline-offset: 2px; }
+#mdbook-menu-bar { flex-wrap: nowrap; align-items: center; border-block-end-color: var(--docs-border); }
+#mdbook-menu-bar .menu-title { text-align: left; font-size: 1.4rem; font-weight: 600; padding-inline: 1.4rem; }
+#mdbook-menu-bar .docs-brand { color: var(--fg); text-decoration: none; }
+#mdbook-menu-bar .right-buttons { display: flex; align-items: center; margin-inline: .4rem 1.2rem; white-space: nowrap; }
+.docs-language-control { display: flex; align-items: center; margin-inline: .6rem; }
+#docs-language { color: var(--fg); background: var(--bg); border: 1px solid var(--docs-border); border-radius: 4px; padding: .5rem .7rem; min-width: 106px; min-height: 32px; font-size: 1.3rem; cursor: pointer; }
+#docs-language:hover { border-color: var(--docs-muted); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+#mdbook-sidebar { font-size: 1.3rem; border-inline-end: 1px solid var(--docs-border); }
+#mdbook-sidebar .chapter { padding-inline: 1.6rem; }
+#mdbook-sidebar .chapter li.chapter-item { margin-block-start: .5em; line-height: 1.6; }
+#mdbook-sidebar .chapter li.header-item { font-size: 1.2rem; color: var(--docs-muted); margin-top: 2rem; margin-bottom: .8rem; }
+#mdbook-sidebar .on-this-page { border-inline-start-width: 1px; }
+.document-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.6rem; font-size: 1.3rem; color: var(--docs-muted); font-variant-numeric: tabular-nums; margin: 1.4rem 0 2.8rem; }
+.document-actions { display: flex; align-items: center; gap: 1.6rem; font-size: 1.4rem; }
+.document-actions .start-reading { display: inline-block; background: var(--docs-action-bg); color: var(--docs-action-fg); padding: .7rem 1.4rem; border: 1px solid transparent; border-radius: 4px; text-decoration: none; font-weight: 550; }
+.document-actions .start-reading:hover { text-decoration: underline; }
+.docs-home main > h1 { margin-bottom: .8rem; }
+.docs-home main > h1 + p { color: var(--docs-muted); margin-top: 0; font-size: 1.7rem; }
+.docs-home main table th { background: transparent; color: var(--docs-muted); font-weight: 500; text-align: left; }
+.docs-home main table td, .docs-home main table th { border: 0; border-bottom: 1px solid var(--docs-border); padding: 1.1rem 0; }
+.docs-home main table td:first-child, .docs-home main table th:first-child { width: 31%; padding-inline-end: 1.6rem; }
+.docs-home main table td a { font-weight: 550; }
+.docs-home main > p:last-child { font-size: 1.3rem; color: var(--docs-muted); margin-top: 2.8rem; }
+@media (max-width: 680px) {
+  #mdbook-menu-bar .right-buttons a[title="Print this book"] { display: none; }
+  #mdbook-menu-bar .menu-title { padding-inline: .4rem; }
+  .content main h1 { font-size: 2.8rem; margin-top: 2rem; }
+  .document-meta { gap: .4rem 1rem; }
+  .docs-home main table td:first-child, .docs-home main table th:first-child { width: 36%; }
+}
+@media (max-width: 480px) {
+  #mdbook-menu-bar .right-buttons a[title="Git repository"] { display: none; }
+  #mdbook-menu-bar .right-buttons { margin-inline-end: .5rem; }
+  #docs-language { min-width: 98px; }
+  .docs-home main table { font-size: 1.3rem; }
+  .docs-home main table td:first-child, .docs-home main table th:first-child { width: 38%; }
+}
 @media print {
   @page { margin: 18mm 15mm; }
-  body, .content main { font-size: 10pt; line-height: 1.6; }
+  body, .content main { font-size: 10pt; line-height: 1.6; max-width: none; }
   .content main h1 { font-size: 22pt; }
   .content main h2 { font-size: 15pt; }
   .content main h3 { font-size: 11pt; }
@@ -21,5 +95,5 @@
   .content main td, .content main th { overflow-wrap: anywhere; padding: 4pt; }
   .content main tr, .content main blockquote { break-inside: avoid; }
   .content main h1, .content main h2, .content main h3 { break-after: avoid; }
-  #language-switch { display: none; }
+  .docs-language-control { display: none; }
 }

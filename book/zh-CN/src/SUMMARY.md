@@ -4,10 +4,8 @@
 
 [阅读指南](reading-guide.md)
 
-[版本、权威与来源](edition.md)
 
-
-# 第一篇 · 语言基础
+# 语言基础
 
 - [1. 目的、权威边界与规范性用语](01-purpose.md)
 - [2. 符合性档位与能力登记表](02-profiles.md)
@@ -17,20 +15,20 @@
 - [6. 类型解析与转换](06-type-resolution.md)
 - [7. 表达式、谓词与 NULL](07-expressions.md)
 
-# 第二篇 · 关系查询
+# 关系查询
 
 - [8. SELECT、排序与逻辑行数上限](08-select.md)
 - [9. JOIN](09-joins.md)
 - [10. 分组与聚合](10-aggregates.md)
 - [11. 可选关系查询结构](11-optional-relational.md)
 
-# 第三篇 · 修改与 Schema
+# 修改与 Schema
 
 - [12. 数据修改](12-data-modification.md)
 - [13. 请求事务、幂等与未知结果](13-transactions.md)
 - [14. Schema 定义与迁移](14-schema-migrations.md)
 
-# 第四篇 · 执行契约
+# 执行契约
 
 - [15. 目录与能力发现](15-catalog.md)
 - [16. 校验、制品与 EXPLAIN](16-artifacts-explain.md)
@@ -39,7 +37,7 @@
 - [19. 预算、截止时间与取消](19-budgets-cancellation.md)
 - [20. 授权、血缘与审计](20-authorization-audit.md)
 
-# 第五篇 · 演进与证据
+# 演进与证据
 
 - [21. 多模型扩展框架](21-extensions.md)
 - [22. 兼容性、版本化与实现要求](22-compatibility.md)
@@ -63,3 +61,4 @@
 - [传输契约（英文）](companion-transport.md)
 - [资格验证场景（英文）](acceptance-scenarios.md)
 - [原始资料背景](source-context.md)
+- [版本、权威与来源](edition.md)

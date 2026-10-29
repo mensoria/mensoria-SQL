@@ -62,6 +62,7 @@ def check_html():
             target = (path.parent / unquote(url.path)).resolve() if url.path else path
             if target.is_dir():
                 target /= "index.html"
+            assert target.is_relative_to(site.resolve()), f"Built link escapes published site: {path.relative_to(ROOT)} -> {raw}"
             assert target.is_file(), f"Broken built link: {path.relative_to(ROOT)} -> {raw}"
             if url.fragment and target in pages:
                 assert unquote(url.fragment) in pages[target].ids, f"Missing built anchor: {path.name} -> {raw}"

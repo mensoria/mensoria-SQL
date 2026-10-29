@@ -13,7 +13,7 @@ default-theme = "light"
 preferred-dark-theme = "navy"
 no-section-label = true
 additional-css = ["../theme/book.css"]
-additional-js = ["../theme/language-switch.js"]
+additional-js = ["../theme/docs-navigation.js"]
 git-repository-url = "https://github.com/mensoria/mensoria-SQL"
 site-url = "/mensoria-SQL/en/"
 

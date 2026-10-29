@@ -12,6 +12,8 @@ This repository is the source and GitHub Pages publisher for the official docume
 
 Official website: **[mensoria.github.io/mensoria-SQL](https://mensoria.github.io/mensoria-SQL/)**. GitHub Pages is enabled with GitHub Actions as its publishing source. See [publishing instructions and the verified deployment record](docs/site-publishing.md).
 
+The project URL opens the documentation directly: Simplified Chinese by default, or the last selected language. A single language selector lives in the documentation header and preserves the current chapter.
+
 ## Read the sources
 
 | Edition | Start | Full contents |

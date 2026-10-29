@@ -16,3 +16,10 @@ This is an editorial book edition of the existing language draft. It adds no exe
 - Add GitHub Pages artifact upload/deployment for main, read-only PR builds, a project-path 404, sitemap, robots metadata and `.nojekyll`.
 - Keep EPUB/print as optional formats and preserve the normative manuscript, source hashes and language-qualification boundaries.
 - Record Pages activation, authentication and live deployment verification separately in `docs/site-publishing.md`.
+
+## Documentation homepage refinement — 2026-10-29
+
+- Open the reading overview directly from the project root, retaining the selected language.
+- Consolidate language changes into one upper-right native selector and preserve the chapter/stable rule anchor.
+- Replace repeated bilingual entry cards with a compact specification overview, and tune the existing reading typography/header/sidebar.
+- Keep the normative draft intact; validate HTML/EPUB and confined published-resource paths.

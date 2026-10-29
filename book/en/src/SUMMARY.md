@@ -4,10 +4,8 @@
 
 [Reading guide](reading-guide.md)
 
-[Edition, authority and provenance](edition.md)
 
-
-# Part I · Language foundations
+# Language foundations
 
 - [1. Purpose, authority and normative terminology](01-purpose.md)
 - [2. Conformance profiles and feature registry](02-profiles.md)
@@ -17,20 +15,20 @@
 - [6. Type resolution and casts](06-type-resolution.md)
 - [7. Expressions, predicates and NULL](07-expressions.md)
 
-# Part II · Relational queries
+# Relational queries
 
 - [8. SELECT, ordering and logical limits](08-select.md)
 - [9. JOIN](09-joins.md)
 - [10. Grouping and aggregates](10-aggregates.md)
 - [11. Optional relational constructs](11-optional-relational.md)
 
-# Part III · Mutation and schema
+# Mutation and schema
 
 - [12. Data modification](12-data-modification.md)
 - [13. Request transactions, idempotency and unknown outcomes](13-transactions.md)
 - [14. Schema definition and migration](14-schema-migrations.md)
 
-# Part IV · Execution contract
+# Execution contract
 
 - [15. Catalog and capability discovery](15-catalog.md)
 - [16. Validation, artifacts and EXPLAIN](16-artifacts-explain.md)
@@ -39,7 +37,7 @@
 - [19. Budgets, deadlines and cancellation](19-budgets-cancellation.md)
 - [20. Authorization, lineage and auditing](20-authorization-audit.md)
 
-# Part V · Evolution and evidence
+# Evolution and evidence
 
 - [21. Multimodel extension framework](21-extensions.md)
 - [22. Compatibility, versioning and implementation requirements](22-compatibility.md)
@@ -63,3 +61,4 @@
 - [Transport contract](companion-transport.md)
 - [Qualification scenarios](acceptance-scenarios.md)
 - [Historical source context](source-context.md)
+- [Edition, authority and provenance](edition.md)

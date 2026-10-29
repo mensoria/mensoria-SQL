@@ -12,6 +12,8 @@
 
 官网已发布：**[mensoria.github.io/mensoria-SQL](https://mensoria.github.io/mensoria-SQL/)**。GitHub Pages 已采用 GitHub Actions 发布源，构建与部署已通过。维护与上线证据见[发布说明及核验记录](docs/site-publishing.md)。
 
+官网直接进入文档概览，默认中文，并记住上次选择的语言。语言仅在文档右上角切换，保留当前章节。
+
 ## 阅读结构
 
 1. **语言基础**：范围、档位、模型、词法、类型与表达式。
