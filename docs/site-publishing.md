@@ -55,6 +55,17 @@ Review the root documentation homepage, both language entries, a normative chapt
 
 A successful local build is not a deployment. Record the exact pushed commit, workflow run and deployment URL; then verify the public homepage and representative English/Chinese routes over HTTPS. A queued, failed or authentication-blocked deployment must not be reported as live. Keep SQL runtime, driver, business and production conformance separate from documentation delivery.
 
-## Current publication record
+## Verified initial publication — 2026-10-29
 
-Configuration and local validation are being prepared. Repository access was verified: the connected Personal account has administrative permission, and local SSH can read the empty remote. GitHub CLI is not authenticated and the current browser is logged out; the connector does not expose the Pages administration endpoint. The one-time Pages setting therefore still requires an authenticated administration path. This paragraph is updated only after actual remote deployment evidence exists.
+- Initial published source commit: `dae054c269d9e35498b6c214249d2a9ec284204f`.
+- [Actions run 40847782679](https://github.com/mensoria/mensoria-SQL/actions/runs/40847782679), attempt **2**: build and deploy both **success**.
+- GitHub Pages deployment **7408429865**: state **success**, environment `github-pages`, matching the source SHA above.
+- [Live official site](https://mensoria.github.io/mensoria-SQL/): public, `build_type=workflow`, HTTPS enforced.
+- Public HTTPS probes passed for the homepage, English and Simplified Chinese entries, Chinese grammar appendix, shared stylesheet and sitemap; a deliberately missing path returned HTTP 404 with the custom page.
+- The public homepage also rendered in the in-app browser with both language routes and reference navigation.
+
+The first run's build passed but deployment failed with HTTP 404 because the Pages service had not yet been enabled. After the user authenticated the CLI, the absent service was explicitly created with `build_type=workflow`; rerunning the failed deployment succeeded. The failed attempt remains visible in the same Actions run. No credentials are embedded in this record.
+
+[Machine-readable initial publication evidence](site-publication.json) records the exact identifiers and checks. These identify the first verified publication, not a self-referential promise about the commit containing this record. Subsequent main-branch updates use the same workflow and require their own successful deployment.
+
+Local site validation before this publication: **88** generated HTML pages, **3,177** local references/assets, **79** unique sitemap URLs; preserved normative text, bilingual code, source hashes, grammar closure and whitespace checks passed. SQL parser/backend, driver, business and production qualification remain **not run**; website publication does not change that boundary.

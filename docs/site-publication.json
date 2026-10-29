@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-29",
+  "scope": "initial_documentation_site_publication",
+  "source_commit": "dae054c269d9e35498b6c214249d2a9ec284204f",
+  "workflow_run": 40847782679,
+  "workflow_attempt": 2,
+  "workflow_url": "https://github.com/mensoria/mensoria-SQL/actions/runs/40847782679",
+  "build": "success",
+  "deploy": "success",
+  "deployment_id": 7408429865,
+  "environment": "github-pages",
+  "site_url": "https://mensoria.github.io/mensoria-SQL/",
+  "build_type": "workflow",
+  "public": true,
+  "https_enforced": true,
+  "initial_failure": {
+    "workflow_attempt": 1,
+    "build": "success",
+    "deploy": "failure",
+    "reason": "GitHub Pages service not yet enabled; deploy API returned HTTP 404"
+  },
+  "public_probes": [
+    {
+      "path": "",
+      "status": 200,
+      "expected_content": true
+    },
+    {
+      "path": "en/index.html",
+      "status": 200,
+      "expected_content": true
+    },
+    {
+      "path": "zh-CN/index.html",
+      "status": 200,
+      "expected_content": true
+    },
+    {
+      "path": "zh-CN/appendix-a-grammar.html",
+      "status": 200,
+      "expected_content": true
+    },
+    {
+      "path": "assets/site.css",
+      "status": 200,
+      "expected_content": true
+    },
+    {
+      "path": "sitemap.xml",
+      "status": 200,
+      "expected_content": true
+    },
+    {
+      "path": "this-page-does-not-exist",
+      "status": 404,
+      "expected_content": true
+    }
+  ],
+  "local_validation": {
+    "html_pages": 88,
+    "local_references_and_assets": 3177,
+    "sitemap_urls": 79,
+    "normative_text_preserved": true,
+    "bilingual_code_identical": true
+  },
+  "sql_runtime_qualification": "not_run"
+}

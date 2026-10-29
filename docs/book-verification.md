@@ -1,5 +1,7 @@
 # First book edition: local verification
 
+> Historical local book-edition record, before the official website publishing increment. Current deployment evidence is maintained in [the site publication record](site-publishing.md). The original measurements and unrun layers below retain their original scope.
+
 **Date:** 2026-10-29, Asia/Shanghai. **Edition:** 0.1.0-draft.1. **Scope:** local manuscript organization and book outputs in `mensoria-SQL`.
 
 ## Delivered manuscript

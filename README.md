@@ -10,7 +10,7 @@ This repository is the source and GitHub Pages publisher for the official docume
 
 ## Documentation website
 
-Target GitHub Pages URL: [mensoria.github.io/mensoria-SQL](https://mensoria.github.io/mensoria-SQL/). The first deployment requires enabling **Settings → Pages → Build and deployment → Source: GitHub Actions**. See [publishing instructions](docs/site-publishing.md) for activation and verification.
+Official website: **[mensoria.github.io/mensoria-SQL](https://mensoria.github.io/mensoria-SQL/)**. GitHub Pages is enabled with GitHub Actions as its publishing source. See [publishing instructions and the verified deployment record](docs/site-publishing.md).
 
 ## Read the sources
 

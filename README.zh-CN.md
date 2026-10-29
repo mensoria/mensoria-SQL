@@ -10,7 +10,7 @@
 
 ## 官网地址
 
-目标 GitHub Pages 地址：[mensoria.github.io/mensoria-SQL](https://mensoria.github.io/mensoria-SQL/)。首次发布需要在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。启用和上线核验见[发布说明](docs/site-publishing.md)。
+官网已发布：**[mensoria.github.io/mensoria-SQL](https://mensoria.github.io/mensoria-SQL/)**。GitHub Pages 已采用 GitHub Actions 发布源，构建与部署已通过。维护与上线证据见[发布说明及核验记录](docs/site-publishing.md)。
 
 ## 阅读结构
 
