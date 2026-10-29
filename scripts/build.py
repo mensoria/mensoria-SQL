@@ -114,6 +114,17 @@ def site_metadata():
     for url in urls:
         ET.SubElement(ET.SubElement(document, "url"), "loc").text = url
     ET.ElementTree(document).write(site / "sitemap.xml", encoding="utf-8", xml_declaration=True)
+    # Custom mdBook assets keep stable filenames; version references so readers
+    # receive current styling/navigation even when the previous release is cached.
+    assets = ("theme/book.css", "theme/docs-navigation.js", "assets/site.css", "assets/docs-navigation.js")
+    for page in site.rglob("*.html"):
+        content = page.read_text()
+        for asset in assets:
+            target = site / asset
+            if target.exists():
+                version = hashlib.sha256(target.read_bytes()).hexdigest()[:12]
+                content = content.replace(asset + '"', asset + "?v=" + version + '"')
+        page.write_text(content)
 
 
 def main():

@@ -22,6 +22,7 @@ This is a refinement of the incumbent interface, not a new product identity or a
 - The rendered Chinese desktop page had one language control, zero opposite-language body links and a 32px main heading. Root navigation returned to the remembered English edition after a deliberate switch. Switching `/en/13-transactions.html#n038` returned to `/zh-CN/13-transactions.html#n038`.
 - The native selector's explicit accessible label was verified with the browser's label locator. The viewport override was reset after mobile checks, and the desktop sidebar restored.
 - Final live inspection caught mdBook's link color overriding the primary action label. The action selector now outranks that default; rendered foreground/background colors are checked after the fix.
+- Custom CSS/JavaScript references carry content-based versions so a cached previous release cannot conceal the updated reader interface.
 - Checked palette contrast: primary text 13.02:1, secondary text 6.11:1, light-theme action 6.07:1, dark-theme action tokens 7.08:1. Dark-theme token contrast was calculated; this is not a complete visual acceptance of every mdBook theme.
 - The Impeccable detector ran once over the changed HTML, CSS and JavaScript and returned no findings. It warned that the HTML template's generated `assets/site.css` path is absent in the source template directory; the CSS files were explicit scan targets and actual built resources were checked separately.
 
