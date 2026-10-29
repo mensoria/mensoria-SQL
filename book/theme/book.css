@@ -1,0 +1,25 @@
+:root { --content-max-width: 860px; }
+.content main { line-height: 1.85; }
+.content main h1, .content main h2, .content main h3 { line-height: 1.4; }
+.content main h1 { letter-spacing: -.025em; margin-bottom: 1.2em; }
+.content main p { text-wrap: pretty; }
+.content main table { font-size: .94em; line-height: 1.65; }
+.content main td, .content main th { padding: .65em .8em; vertical-align: top; }
+.content main code { font-size: .88em; }
+.content main pre code { font-size: .84em; line-height: 1.65; }
+.edition-label { border-left: 3px solid #278078; padding: .25em 1em; margin: 2em 0; font-size: .8em; letter-spacing: .08em; color: var(--fg); }
+#language-switch { display: inline-block; margin-inline: .8em; padding: .15em .45em; border-radius: 3px; color: var(--icons); text-decoration: none; font-size: 13px; white-space: nowrap; }
+#language-switch:hover, #language-switch:focus-visible { color: var(--fg); outline: 2px solid #278078; outline-offset: 2px; }
+@media print {
+  @page { margin: 18mm 15mm; }
+  body, .content main { font-size: 10pt; line-height: 1.6; }
+  .content main h1 { font-size: 22pt; }
+  .content main h2 { font-size: 15pt; }
+  .content main h3 { font-size: 11pt; }
+  .content main pre, .content main pre code { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 7.5pt; }
+  .content main table { width: 100%; table-layout: fixed; font-size: 8pt; }
+  .content main td, .content main th { overflow-wrap: anywhere; padding: 4pt; }
+  .content main tr, .content main blockquote { break-inside: avoid; }
+  .content main h1, .content main h2, .content main h3 { break-after: avoid; }
+  #language-switch { display: none; }
+}

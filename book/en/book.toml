@@ -1,0 +1,22 @@
+[book]
+title = "Mensoria SQL Documentation"
+authors = ["Mensoria"]
+language = "en"
+src = "src"
+description = "MSQL-SD-001 · Language version 1 · Draft 0.1.0-draft.1"
+
+[build]
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+no-section-label = true
+additional-css = ["../theme/book.css"]
+additional-js = ["../theme/language-switch.js"]
+git-repository-url = "https://github.com/mensoria/mensoria-SQL"
+site-url = "/mensoria-SQL/en/"
+
+[output.html.print]
+enable = true
+page-break = true

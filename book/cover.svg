@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1800" viewBox="0 0 1200 1800" role="img" aria-labelledby="title description">
+<title id="title">Mensoria SQL</title><desc id="description">Language Standard and Reference. Draft 0.1.0-draft.1, language version 1.</desc>
+<rect width="1200" height="1800" fill="#f4f2eb"/><rect x="100" y="140" width="10" height="1270" fill="#278078"/>
+<g fill="#172c30" font-family="sans-serif"><text x="150" y="200" font-size="24" letter-spacing="5">MSQL-SD-001</text><text x="140" y="680" font-size="130" font-weight="700" letter-spacing="-5">Mensoria</text><text x="140" y="840" font-size="150" font-weight="700" letter-spacing="-5">SQL</text><text x="150" y="1000" font-size="36">Language Standard</text><text x="150" y="1060" font-size="36">and Reference</text></g>
+<g fill="#466b68" font-family="sans-serif" font-size="25"><text x="150" y="1320">DRAFT 0.1.0-draft.1</text><text x="150" y="1370">LANGUAGE VERSION 1</text><text x="150" y="1610">ENGLISH / 简体中文</text><text x="150" y="1660">29 OCTOBER 2026</text></g></svg>

@@ -1,0 +1,325 @@
+{
+  "chapters": {
+    "en": [
+      {
+        "id": "1",
+        "file": "01-purpose.md",
+        "title": "1. Purpose, authority and normative terminology"
+      },
+      {
+        "id": "2",
+        "file": "02-profiles.md",
+        "title": "2. Conformance profiles and feature registry"
+      },
+      {
+        "id": "3",
+        "file": "03-database-model.md",
+        "title": "3. Database model, names and binding"
+      },
+      {
+        "id": "4",
+        "file": "04-lexical-structure.md",
+        "title": "4. Lexical structure"
+      },
+      {
+        "id": "5",
+        "file": "05-data-types.md",
+        "title": "5. Data types and values"
+      },
+      {
+        "id": "6",
+        "file": "06-type-resolution.md",
+        "title": "6. Type resolution and casts"
+      },
+      {
+        "id": "7",
+        "file": "07-expressions.md",
+        "title": "7. Expressions, predicates and NULL"
+      },
+      {
+        "id": "8",
+        "file": "08-select.md",
+        "title": "8. SELECT, ordering and logical limits"
+      },
+      {
+        "id": "9",
+        "file": "09-joins.md",
+        "title": "9. JOIN"
+      },
+      {
+        "id": "10",
+        "file": "10-aggregates.md",
+        "title": "10. Grouping and aggregates"
+      },
+      {
+        "id": "11",
+        "file": "11-optional-relational.md",
+        "title": "11. Optional relational constructs"
+      },
+      {
+        "id": "12",
+        "file": "12-data-modification.md",
+        "title": "12. Data modification"
+      },
+      {
+        "id": "13",
+        "file": "13-transactions.md",
+        "title": "13. Request transactions, idempotency and unknown outcomes"
+      },
+      {
+        "id": "14",
+        "file": "14-schema-migrations.md",
+        "title": "14. Schema definition and migration"
+      },
+      {
+        "id": "15",
+        "file": "15-catalog.md",
+        "title": "15. Catalog and capability discovery"
+      },
+      {
+        "id": "16",
+        "file": "16-artifacts-explain.md",
+        "title": "16. Validation, artifacts and EXPLAIN"
+      },
+      {
+        "id": "17",
+        "file": "17-parameters-results-pagination.md",
+        "title": "17. Parameters, results and pagination"
+      },
+      {
+        "id": "18",
+        "file": "18-diagnostics.md",
+        "title": "18. Diagnostics"
+      },
+      {
+        "id": "19",
+        "file": "19-budgets-cancellation.md",
+        "title": "19. Budgets, deadlines and cancellation"
+      },
+      {
+        "id": "20",
+        "file": "20-authorization-audit.md",
+        "title": "20. Authorization, lineage and auditing"
+      },
+      {
+        "id": "21",
+        "file": "21-extensions.md",
+        "title": "21. Multimodel extension framework"
+      },
+      {
+        "id": "22",
+        "file": "22-compatibility.md",
+        "title": "22. Compatibility, versioning and implementation requirements"
+      },
+      {
+        "id": "23",
+        "file": "23-conformance.md",
+        "title": "23. Conformance evidence and release requirements"
+      },
+      {
+        "id": "24",
+        "file": "24-references.md",
+        "title": "24. References"
+      },
+      {
+        "id": "A",
+        "file": "appendix-a-grammar.md",
+        "title": "Appendix A. Closed EBNF grammar"
+      },
+      {
+        "id": "B",
+        "file": "appendix-b-conformance-corpus.md",
+        "title": "Appendix B. Worked conformance corpus"
+      },
+      {
+        "id": "C",
+        "file": "appendix-c-excluded-syntax.md",
+        "title": "Appendix C. Explicitly excluded syntax"
+      },
+      {
+        "id": "D",
+        "file": "appendix-d-review-history.md",
+        "title": "Appendix D. Review checklist and revision history"
+      }
+    ],
+    "zh-CN": [
+      {
+        "id": "1",
+        "file": "01-purpose.md",
+        "title": "1. 目的、权威边界与规范性用语"
+      },
+      {
+        "id": "2",
+        "file": "02-profiles.md",
+        "title": "2. 符合性档位与能力登记表"
+      },
+      {
+        "id": "3",
+        "file": "03-database-model.md",
+        "title": "3. 数据库模型、名称与绑定"
+      },
+      {
+        "id": "4",
+        "file": "04-lexical-structure.md",
+        "title": "4. 词法结构"
+      },
+      {
+        "id": "5",
+        "file": "05-data-types.md",
+        "title": "5. 数据类型与值"
+      },
+      {
+        "id": "6",
+        "file": "06-type-resolution.md",
+        "title": "6. 类型解析与转换"
+      },
+      {
+        "id": "7",
+        "file": "07-expressions.md",
+        "title": "7. 表达式、谓词与 NULL"
+      },
+      {
+        "id": "8",
+        "file": "08-select.md",
+        "title": "8. SELECT、排序与逻辑行数上限"
+      },
+      {
+        "id": "9",
+        "file": "09-joins.md",
+        "title": "9. JOIN"
+      },
+      {
+        "id": "10",
+        "file": "10-aggregates.md",
+        "title": "10. 分组与聚合"
+      },
+      {
+        "id": "11",
+        "file": "11-optional-relational.md",
+        "title": "11. 可选关系查询结构"
+      },
+      {
+        "id": "12",
+        "file": "12-data-modification.md",
+        "title": "12. 数据修改"
+      },
+      {
+        "id": "13",
+        "file": "13-transactions.md",
+        "title": "13. 请求事务、幂等与未知结果"
+      },
+      {
+        "id": "14",
+        "file": "14-schema-migrations.md",
+        "title": "14. Schema 定义与迁移"
+      },
+      {
+        "id": "15",
+        "file": "15-catalog.md",
+        "title": "15. 目录与能力发现"
+      },
+      {
+        "id": "16",
+        "file": "16-artifacts-explain.md",
+        "title": "16. 校验、制品与 EXPLAIN"
+      },
+      {
+        "id": "17",
+        "file": "17-parameters-results-pagination.md",
+        "title": "17. 参数、结果与分页"
+      },
+      {
+        "id": "18",
+        "file": "18-diagnostics.md",
+        "title": "18. 诊断"
+      },
+      {
+        "id": "19",
+        "file": "19-budgets-cancellation.md",
+        "title": "19. 预算、截止时间与取消"
+      },
+      {
+        "id": "20",
+        "file": "20-authorization-audit.md",
+        "title": "20. 授权、血缘与审计"
+      },
+      {
+        "id": "21",
+        "file": "21-extensions.md",
+        "title": "21. 多模型扩展框架"
+      },
+      {
+        "id": "22",
+        "file": "22-compatibility.md",
+        "title": "22. 兼容性、版本化与实现要求"
+      },
+      {
+        "id": "23",
+        "file": "23-conformance.md",
+        "title": "23. 符合性证据与发布要求"
+      },
+      {
+        "id": "24",
+        "file": "24-references.md",
+        "title": "24. 参考资料"
+      },
+      {
+        "id": "A",
+        "file": "appendix-a-grammar.md",
+        "title": "附录 A. 闭合 EBNF 语法"
+      },
+      {
+        "id": "B",
+        "file": "appendix-b-conformance-corpus.md",
+        "title": "附录 B. 带预期结果的符合性案例集"
+      },
+      {
+        "id": "C",
+        "file": "appendix-c-excluded-syntax.md",
+        "title": "附录 C. 明确排除的语法"
+      },
+      {
+        "id": "D",
+        "file": "appendix-d-review-history.md",
+        "title": "附录 D. 审查清单与修订历史"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "id": "I",
+      "range": [
+        1,
+        7
+      ]
+    },
+    {
+      "id": "II",
+      "range": [
+        8,
+        11
+      ]
+    },
+    {
+      "id": "III",
+      "range": [
+        12,
+        14
+      ]
+    },
+    {
+      "id": "IV",
+      "range": [
+        15,
+        20
+      ]
+    },
+    {
+      "id": "V",
+      "range": [
+        21,
+        24
+      ]
+    }
+  ]
+}

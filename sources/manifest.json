@@ -1,0 +1,40 @@
+{
+  "edition": "0.1.0-draft.1",
+  "language_version": "1",
+  "import_date": "2026-10-29",
+  "source_repository": "ArchStudio",
+  "source_base_commit": "ccbac3edafc20b928b2733c6e19a669cd30730d4",
+  "note": "Imported from the local working tree. Base commit alone does not identify these uncommitted drafts. Per-file SHA-256 identifies the imported text. Snapshots are historical inputs; book/*/src is the maintained manuscript.",
+  "files": [
+    {
+      "source_path": "docs/surrealql-source-analysis/137-mensoria-sql-standard-draft.md",
+      "snapshot": "sources/archstudio/137-mensoria-sql-standard-draft.md",
+      "sha256": "19d9971bc495ae602fc909ecda25599b2fb17f222a168dac293aa7375ab35558",
+      "source_worktree_state": "??"
+    },
+    {
+      "source_path": "docs/surrealql-source-analysis/137-mensoria-sql-standard-draft.zh-CN.md",
+      "snapshot": "sources/archstudio/137-mensoria-sql-standard-draft.zh-CN.md",
+      "sha256": "566b1f7870b2f1da2079a08fcd6817d63aed72615464097107d773173e20d28c",
+      "source_worktree_state": "??"
+    },
+    {
+      "source_path": "docs/surrealql-source-analysis/136-mensoria-db-sql-design.md",
+      "snapshot": "sources/archstudio/136-mensoria-db-sql-design.md",
+      "sha256": "3aad19a551a1a85b633ba4f54248426f054b96437b47c2397d199b344fb44224",
+      "source_worktree_state": "??"
+    },
+    {
+      "source_path": "specs/004-surrealdb-rust-ai-baas/contracts/mensoria-sql.md",
+      "snapshot": "sources/archstudio/mensoria-sql.md",
+      "sha256": "cb26f2cecbacce286e74e45161e865359e8d12848c646238f0eabdc3f85302e4",
+      "source_worktree_state": "??"
+    },
+    {
+      "source_path": "specs/004-surrealdb-rust-ai-baas/mensoria-sql-design-review.md",
+      "snapshot": "sources/archstudio/mensoria-sql-design-review.md",
+      "sha256": "019c216651b179102ee3c50415d8c7c8366205a1114090bd9169a0a813835f7c",
+      "source_worktree_state": "??"
+    }
+  ]
+}
