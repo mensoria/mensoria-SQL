@@ -61,7 +61,7 @@ input { caret-color: var(--docs-focus); }
 #mdbook-sidebar .on-this-page { border-inline-start-width: 1px; }
 .document-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.6rem; font-size: 1.3rem; color: var(--docs-muted); font-variant-numeric: tabular-nums; margin: 1.4rem 0 2.8rem; }
 .document-actions { display: flex; align-items: center; gap: 1.6rem; font-size: 1.4rem; }
-.document-actions .start-reading { display: inline-block; background: var(--docs-action-bg); color: var(--docs-action-fg); padding: .7rem 1.4rem; border: 1px solid transparent; border-radius: 4px; text-decoration: none; font-weight: 550; }
+.content .document-actions .start-reading { display: inline-block; background: var(--docs-action-bg); color: var(--docs-action-fg); padding: .7rem 1.4rem; border: 1px solid transparent; border-radius: 4px; text-decoration: none; font-weight: 550; }
 .document-actions .start-reading:hover { text-decoration: underline; }
 .docs-home main > h1 { margin-bottom: .8rem; }
 .docs-home main > h1 + p { color: var(--docs-muted); margin-top: 0; font-size: 1.7rem; }
